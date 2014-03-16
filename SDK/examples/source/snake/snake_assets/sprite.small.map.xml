@@ -1,0 +1,82 @@
+    <DefenderBitmapSet>
+		<ExtraInfo cellsize="40"/>
+		
+		<Bitmap name="Background" filespec="pkg:/snake_assets/snake.map_w-dirt.png" />
+		
+		<Bitmap name="game-over" filespec="pkg:/snake_assets/snake.gameover.png" />
+
+		<Bitmap name="title-screen" filespec="pkg:/snake_assets/snake.title.3.png" />
+		
+		<Bitmap name="snake" filespec="pkg:/snake_assets/snake.body_sprite.png">
+
+			<Region name="butt-North"          x="00" y="00" w="40" h="40" />
+			<Region name="butt-East"			 x="40" y="00" w="40" h="40" />
+			<Region name="butt-South"          x="80" y="00" w="40" h="40" />
+			<Region name="butt-West"           x="120" y="00" w="40" h="40" />
+
+			<Region name="body-North"          x="00" y="40" w="40" h="40" />
+			<Region name="body-East"           x="40" y="40" w="40" h="40" />
+			<Region name="body-South"          x="80" y="40" w="40" h="40" />
+			<Region name="body-West"           x="120" y="40" w="40" h="40" />
+
+			<Region name="corner-North"		 x="00" y="80" w="40" h="40" />
+			<Region name="corner-East"		 x="40" y="80" w="40" h="40" />
+			<Region name="corner-South"		 x="80" y="80" w="40" h="40" />
+			<Region name="corner-West"		 x="120" y="80" w="40" h="40" />
+
+			<Region name="head-North"          x="00" y="120" w="40" h="40" />
+			<Region name="head-East"           x="40" y="120" w="40" h="40" />
+			<Region name="head-South"          x="80" y="120" w="40" h="40" />
+			<Region name="head-West"           x="120" y="120" w="40" h="40" />
+
+			<Region name="tongue-North"         x="00" y="160" w="40" h="40" t="170"/>
+			<Region name="tongue-East"          x="40" y="160" w="40" h="40" t="170"/>
+			<Region name="tongue-South"         x="80" y="160" w="40" h="40" t="170"/>
+			<Region name="tongue-West"          x="120" y="160" w="40" h="40" t="170"/>
+		</Bitmap>
+		
+		<Bitmap name="water_strip" filespec="pkg:/snake_assets/snake.water_sprite.png">
+			<Region name="a"        x="0" y="0" w="40" h="40" t="400" />
+			<Region name="b"        x="40" y="0" w="40" h="40" t="400" />
+			<Region name="c"        x="80" y="0" w="40" h="40" t="400" />
+			<Region name="d"        x="120" y="0" w="40" h="40" t="400" />
+			<Region name="e"        x="160" y="0" w="40" h="40" t="400" />
+			<Region name="f"        x="200" y="0" w="40" h="40" t="400" />
+			<Region name="g"        x="240" y="0" w="40" h="40" t="400" />
+			<Region name="h"        x="280" y="0" w="40" h="40" t="400" />
+		</Bitmap>
+
+		<Bitmap name="empty" shape="rect" color="0" w="40" h="40" t="680" />
+
+		<Animation name="water">
+			<frame use="water_strip.a" />
+			<frame use="water_strip.b" />
+			<frame use="water_strip.c" />
+			<frame use="water_strip.d" />
+			<frame use="water_strip.e" />
+			<frame use="water_strip.f" />
+			<frame use="water_strip.g" />
+			<frame use="water_strip.h" />
+		</Animation>
+
+		<Animation name="tongue-North">
+			<frame use="snake.tongue-North" />
+			<frame use="empty" />
+		</Animation>
+
+		<Animation name="tongue-East">
+			<frame use="snake.tongue-East" />
+			<frame use="empty" />
+		</Animation>
+
+		<Animation name="tongue-South">
+			<frame use="snake.tongue-South" />
+			<frame use="empty" />
+		</Animation>
+
+		<Animation name="tongue-West">
+			<frame use="snake.tongue-West" />
+			<frame use="empty" />
+		</Animation>
+		
+</DefenderBitmapSet>

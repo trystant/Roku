@@ -1,0 +1,21 @@
+This directory represents source and configuration files for an Android app that emulates a Roku RSP remote.
+
+In addition, the app can transmit various sensor readings (accelerometer, gyroscope, and magnetometer) from a suitably equipped Android device to the Roku RSP.
+
+Also, touch and multi-touch events were added from a blank screen called "touch" (as opposed to "buttons"). The touch/button mode is togglable via standard settings.
+
+All of this input is communicated to the Roku RSP via the roku:rsp:ecp protocol which is presented by the Roku RSP and discovered by this Android app as an SSDP service.
+
+The Roku directory is the root of an Eclipse IDE project. It has been succesfully imported from a simple file hierarchy into Eclipse at least once.
+
+To use it successfully, there are several required installation steps. Eclipse must be installed. The Android SDK must be installed, and several Android plugins must be installed into Eclipse.
+
+To get Eclipse to see the target, I have to use the adb (Android Debug bridge) tool to kill the adb server "adb kill-server" and re-scan for devices "adb devices" after connecting the target to the host via USB but before starting Eclipse. After that, selecting "Run -> Debug" would download the Roku Remote app to the target and run it in debug mode.
+
+Web research will eventually reveal all the steps, but be prepared for some missteps. Please feel free to update this doc with additional detail or new install and usage scenarios.
+
+This was tested hosted on Fedora 12 (Constantine) with Eclipse 3.5 (Galileo) and targeted to the Samsung Galaxy S Tab running Android 2.2 (Froyo).
+
+In its present form, this app requires Android 2.2 (API 8) at minimum. By removing or stubbing the Touch class, Android 1.6 (API 4) will suffice.
+
+

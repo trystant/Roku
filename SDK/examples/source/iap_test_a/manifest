@@ -1,0 +1,9 @@
+title=InAppBuyA
+subtitle=IAP upgradable test channel
+mm_icon_focus_hd=pkg:/images/mm_icon_focus_hd.png
+mm_icon_side_hd=pkg:/images/mm_icon_side_hd.png
+mm_icon_focus_sd=pkg:/images/mm_icon_focus_sd.png
+mm_icon_side_sd=pkg:/images/mm_icon_side_sd.png
+major_version=1
+minor_version=2
+build_version=00012

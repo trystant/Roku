@@ -1,0 +1,8 @@
+<Roku>
+    <MimeTypes>
+        <brs>text/plain</brs>
+    </MimeTypes>
+    <globals>
+        <wwwroot>ext1:/</wwwroot>
+    </globals>
+</Roku>

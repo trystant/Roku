@@ -1,0 +1,9 @@
+title=USB Grid
+subtitle=Example of bringing selection of photos in Grid Screen
+mm_icon_focus_hd=pkg:/images/usb.png
+mm_icon_side_hd=pkg:/images/usb.png
+mm_icon_focus_sd=pkg:/images/usb.png
+mm_icon_side_sd=pkg:/images/usb.png
+major_version=1
+minor_version=0
+build_version=00000
